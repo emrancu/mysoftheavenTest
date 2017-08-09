@@ -1,0 +1,253 @@
+
+mysoftheaven@gmail.com
+
+
+
+Answer Question 1:
+
+
+ 
+$range = 10;  
+ 
+   
+for ($i = 0; $i < $range; $i++){  
+echo fibonacciseries($i);  
+echo "-";  
+}  
+
+
+
+function fibonacciseries($range){  
+    if($range == 0){  
+    return 0;  
+    }else if( $range == 1){  
+return 1;  
+}  else {  
+return (fibonacciseries($range-1) + fibonacciseries($range-2));  
+}
+   
+}  
+
+
+
+
+
+
+
+
+Answer Question 3:
+
+   function check_prime_number($n)
+     {
+        $check = True; 
+        for ($i = 2; $i < $n; $i++)
+        {
+            if ($n % $i == 0) 
+            {
+                 $check = False;
+                 break;
+            }               
+        }
+       if($check){
+		   echo 'It is Prime Number';
+	   }else{
+		   echo 'It is not Prime Number';
+	   }
+     } 
+
+
+check_prime_number(61);
+
+
+
+
+Answer Question 4:
+
+$x=0;
+for($i=1;$i<5;$i++){
+	
+	$x=$i;
+	
+for($p=1;$p<=3;$p++){
+	echo $x;
+	
+	$x+=4;
+}	
+ echo '<br>';
+ 
+ 	
+}
+
+
+
+Answer Question 5:
+
+
+function checkodd($n){
+	
+	if ($n % 2 == 0) {
+	 return true;
+	}else{
+		return false;
+	}	
+}
+
+$x=0;
+$range=9;
+$row=5;
+for($i=1;$i<=$range ;$i++){
+ 
+		for($j=1;$j<=$row;$j++){
+			if(checkodd($i)){
+				echo ' &nbsp;';
+			}else{
+					if($i==1 || $i==$range ){
+						echo '*';
+					}else{
+							if($j==$row || $j==1){
+								echo '*';
+							}else{
+								echo ' &nbsp;';
+							}
+						
+						
+					}
+				
+			
+			}
+		 
+		 
+			
+		}
+		echo '<br>';
+
+}
+
+
+
+Answer to the question -6:
+
+
+ 
+
+
+function checkodd($n){
+	
+	if ($n % 2 == 0) {
+	 return true;
+	}else{
+		return false;
+	}	
+}
+
+$blank='<span style="color:green">*</span>';
+$fill='<span style="color:red">*</span>';
+ 
+$x=0;
+$range=4;
+$row=8;
+for($i=1;$i<=$range ;$i++){
+ 
+ 
+ 
+ 
+		for($j=1;$j<=$row;$j++){
+			if(checkodd($j)){
+				echo $blank;
+			} else{
+				echo $fill;
+			}
+	
+		}
+		
+		echo '<br>';
+		for($j=1;$j<=$row;$j++){
+			 
+			if(checkodd($j)){
+				echo  $fill;
+			} else{
+				echo $blank;
+			}	
+			
+		 
+		 
+		 
+			
+		}
+		echo '<br>';
+
+}
+
+
+
+
+
+Answer to the question -6:
+
+
+
+ 
+$x=0;
+$range=10;
+$row=10;
+for($i=1;$i<=$range ;$i++){
+ 
+ 
+ 
+ 
+		for($j=1;$j<=$row;$j++){
+			echo $i*$j.'-'; 
+	
+		}
+		echo '<br>';
+	$i+=$x;	
+		 
+
+}
+
+
+
+
+Answer to the question -8:
+
+
+$c1='JOHN';
+$c2="SMITH';
+
+echo $c1.$c2;
+
+
+
+Answer to the question -9:
+
+
+<table>
+<tr>
+<?php
+$row=['ID','Name','Dept','Mobilee'];
+
+foreach($row as $k=>$v){
+	
+	echo '<th>'.$v.'</th>';
+	
+	
+}
+
+
+
+
+?>
+
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
